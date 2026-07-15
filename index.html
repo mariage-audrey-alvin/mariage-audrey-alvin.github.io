@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Déposer un Message Vocal</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #faf9f6;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .header {
+            background-color: #1a365d;
+            color: #ffffff;
+            text-align: center;
+            padding: 40px 20px;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 15px;
+            color: #e2e8f0;
+        }
+        .container {
+            max-width: 650px;
+            margin: 0 auto;
+            padding: 0 20px 40px 20px;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            padding: 24px;
+            border: 1px solid #e2e8f0;
+        }
+        .instructions {
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #edf2f7;
+        }
+        .instructions h2 {
+            font-size: 18px;
+            margin-top: 0;
+            color: #2d3748;
+        }
+        .instructions ol {
+            padding-left: 20px;
+            margin: 10px 0 0 0;
+            color: #4a5568;
+            font-size: 14px;
+        }
+        .instructions li {
+            margin-bottom: 8px;
+        }
+        /* Iframe container wrapper to maintain ratio if needed */
+        .iframe-wrapper {
+            position: relative;
+            width: 100%;
+            min-height: 550px;
+        }
+        iframe {
+            width: 100%;
+            height: 550px;
+            border: none;
+            display: block;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 12px;
+            color: #718096;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Boîte Vocale En Ligne</h1>
+        <p>Laissez-moi un message audio en quelques secondes</p>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="instructions">
+                <h2>Comment envoyer votre message ?</h2>
+                <ol>
+                    <li>Cliquez sur le bouton d'importation dans le formulaire ci-dessous.</li>
+                    <li>Choisissez un fichier audio déjà enregistré (MP3, M4A, WAV, etc.) <strong>OU</strong> sélectionnez le micro/dictaphone de votre téléphone pour vous enregistrer directement.</li>
+                    <li>Remplissez les éventuelles autres informations (Nom, E-mail) et cliquez sur <strong>Envoyer</strong>.</li>
+                </ol>
+            </div>
+
+            <div class="iframe-wrapper">
+                <!-- IMPORTANT : Remplacez VOTRE_ID_FORMULAIRE par l'ID réel fourni par Jotform -->
+                <!-- L'attribut allow="microphone" est indispensable pour que le navigateur autorise l'enregistrement -->
+                <iframe
+                    id="JotFormIFrame-261955920276061"
+                    title="Formulaire de dépôt audio"
+                    onload="window.parent.scrollTo(0,0)"
+                    allow="geolocation; microphone; camera"
+                    src="https://form.jotform.com/261955920276061"
+                    frameborder="0"
+                    scrolling="no">
+                </iframe>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Hébergé sur GitHub Pages • propulsé par Jotform</p>
+        </div>
+    </div>
+
+</body>
+</html>
