@@ -357,7 +357,7 @@
             sourceEl.src = data.audio;
             audioEl.load();
 
-            document.getElementById('page-counter').textContent = `Passage ${index + 1} sur ${guestMessages.length}`;
+            document.getElementById('page-counter').textContent = `Message ${index + 1} sur ${guestMessages.length}`;
 
             document.getElementById('btn-prev').disabled = (index === 0);
             document.getElementById('btn-next').disabled = (index === guestMessages.length - 1);
