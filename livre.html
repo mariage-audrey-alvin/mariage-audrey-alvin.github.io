@@ -104,7 +104,6 @@
             text-shadow: 0 1px 2px rgba(0,0,0,0.05);
         }
 
-
         .guest-card {
             background-color: #ffffff;
             border-radius: 20px;
@@ -116,7 +115,7 @@
 
         .guest-photo-wrapper {
             width: 100%;
-            max-height: 320px;
+           
             border-radius: 14px;
             overflow: hidden;
             margin-bottom: 15px;
@@ -125,9 +124,8 @@
 
         .guest-photo {
             width: 100%;
-            height: 100%;
-            max-height: 320px;
-            object-fit: cover;
+            height: auto; 
+            object-fit: contain; 
             display: block;
         }
 
@@ -138,7 +136,6 @@
             margin: 10px 0 15px 0;
             font-weight: 700;
         }
-
 
         audio {
             width: 100%;
@@ -254,108 +251,92 @@
     </div>
 
     <script>
-
         const guestMessages = [
             {
                 name: "Lore, Clara & Aurélien",
                 photo: "Media/Lore_Clara_Ms_Bean.png",
                 audio: "Media/Lore_Clara_Ms_Bean.mp4"
             },
-            
             {
                 name: "Adrien Pater",
                 photo: "Media/Adrien_Pater.png",
                 audio: "Media/Adrien_Pater.mp4"
             },
-
             {
                 name: "Luka & Manon",
                 photo: "Media/Luka_et_Manon_Mandel.png",
                 audio: "Media/Luka_et_Manon_Mandel.mp4"
             },
-
             {
                 name: "Tony & Katy",
                 photo: "Media/Tony_et_Katy Mansel.png",
                 audio: "Media/Tony_et_Katy Mansel.mp4"
             },
-
             {
                 name: "Kévin & Sonny",
                 photo: "Media/Kévin_et_Sonny_Vangrootenbruele.png",
                 audio: "Media/Kévin_et_Sonny_Vangrootenbruele.m4a"
             },
-
             {
                 name: "Vanina & Thomas",
                 photo: "Media/Nouille_Coget_1.png",
                 audio: "Media/Nouille_Coget_1.mp4"
             },
-
             {
                 name: "Benjamin & Perrine",
                 photo: "Media/Benjamin_Perrine.png",
                 audio: "Media/Benjamin_Perrine.mp4"
             },
-
             {
                 name: "Baptiste Baron",
                 photo: "Media/Baptiste_Baron.png",
                 audio: "Media/Baptiste_Baron.mp4"
             },
-
             {
                 name: "Vanina & Thomas le retour",
                 photo: "Media/Nouille_Coget_2.png",
                 audio: "Media/Nouille_Coget_2.mp4"
             },
-
             {
                 name: "Emilie",
                 photo: "Media/Emilie_Bonhote.png",
                 audio: "Media/Emilie_Bonhote.mp4"
             },
-
             {
                 name: "Table Lilas du Crépuscule",
                 photo: "Media/Table_Lilas_du_crépuscule.jpg",
                 audio: ""
             },
-
             {
                 name: "Emma",
                 photo: "Media/Emma_Jodin_1.png",
-                audio: "Emma_Jodin.mp4"
+                audio: "Media/Emma_Jodin.mp4"
             },
-
             {
                 name: "Emma",
                 photo: "Media/Emma_Jodin_2.jpeg",
-                audio: "Emma_Jodin.mp4"
+                audio: "Media/Emma_Jodin.mp4"
             },
             {
                 name: "Emma",
                 photo: "Media/Emma_Jodin_3.jpeg",
-                audio: "Emma_Jodin.mp4"
+                audio: "Media/Emma_Jodin.mp4"
             },
             {
                 name: "Emma",
                 photo: "Media/Emma_Jodin_4.jpeg",
-                audio: "Emma_Jodin.mp4"
+                audio: "Media/Emma_Jodin.mp4"
             },
-            
             {
                 name: "Kassandre Lesien",
                 photo: "Media/Kassandre_Lesien.png",
                 audio: "Media/Kassandre_Lesien.mp4"
             },
-
             {
                 name: "Clara & Aurélien",
                 photo: "Media/Clara_Ms_Bean.png",
                 audio: "Media/Clara_Ms_Bean.mp4"
             },
-
             {
                 name: "Gros dodo de Romy",
                 photo: "Media/Dodo_romy.png",
